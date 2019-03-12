@@ -9,7 +9,7 @@ When executing ./app/app, lines shown in terminal likes:
 [root@test-server cpp]# ./app/app
 1 + 2 = -4
 ```
-When `libsdll.so` is replaced by `libfdll.so` by shell command `mv fdll/libfdll.so sdll/libsdll.so`, the output of `app` is not the same as before:
+When `libsdll.so` is replaced by `libfdll.so` with shell command `mv fdll/libfdll.so sdll/libsdll.so`, the output of `app` is not the same as before:
 ```
 [root@test-server cpp]# mv fdll/libfdll.so sdll/libsdll.so
 mv: overwrite ‘sdll/libsdll.so’? y
@@ -20,5 +20,7 @@ mv: overwrite ‘sdll/libsdll.so’? y
 
 
 # How to build
+```
 $ cmake . 
 $ make 
+```
